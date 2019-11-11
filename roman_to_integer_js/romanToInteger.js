@@ -1,4 +1,5 @@
-var romanToInt = function(s) {
+function RomanToInteger(){
+  RomanToInteger.prototype.proceed = function(s){
     var sArray = s.split("").reverse();
     var result = 0;
     var prevElement = 0;
@@ -23,7 +24,8 @@ var romanToInt = function(s) {
 
             prevElement = element;
         });
-
     return result;
+  }
+}
 
-};
+module.exports = RomanToInteger;
