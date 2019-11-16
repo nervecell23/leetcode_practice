@@ -1,5 +1,8 @@
 class PascalTriangle:
     def perform(self, numRows):
+        if numRows == 0:
+            return []
+
         triangle = [[1]];
 
         for i in range(0, numRows-1):
